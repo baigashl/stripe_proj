@@ -1,0 +1,33 @@
+<html>
+  <head>
+      <script type="text/javascript">
+          let url = window.location.pathname
+          var res = url.split("/")
+          let id = res[2]
+      </script>
+    <title>Buy Item 1</title>
+  </head>
+  <body>
+    <h1 id="tagH1">Item </h1>
+    <p id="tagP1">Description of Item 1</p>
+    <p>1111</p>
+    <button id="buy-button">Buy</button>
+    <script type="text/javascript">
+    const H1TAG = document.getElementById('tagH1')
+        H1TAG.innerText = `Item ${id}`
+    const TAGP1 = document.getElementById('tagP1')
+        TAGP1.innerText = `Description of Item ${id}`
+      {#var stripe = Stripe('sk_test_51Lg6uJACJ0hmrHGCnJMIMus6yTosn76emhHVTrINrAnPJpljDjBTVf02dO0ehmNcMbkgYp4F6vOQLjugUuuOSskF00Ts9ew9r1');#}
+      var buyButton = document.getElementById('buy-button');
+      console.log(url)
+      console.log(id)
+      buyButton.addEventListener('click', function() {
+        // Create a new Checkout Session using the server-side endpoint
+        // Redirect to Stripe Session Checkout
+        fetch(`http://127.0.0.1:8000/item/buy/${id}/`, {method: 'GET'})
+        .then(response => {return response.json()})
+        .then(session => console.log(session))
+      });
+    </script>
+  </body>
+</html>

@@ -99,6 +99,6 @@ def index(request, id):
     success_url='http://localhost:8000/success',
     cancel_url='http://localhost:8000/cancel',
   )
-  template = loader.get_template('checkout.js')
+  template = loader.get_template('checkout.html')
   return HttpResponse(template.render())
 
