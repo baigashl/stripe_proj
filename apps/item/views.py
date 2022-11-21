@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 import stripe
+from django.conf import settings
 from django.template import loader
 from rest_framework import permissions, status
 from rest_framework.response import Response
@@ -10,7 +11,7 @@ from .models import Item
 from .serializers import ItemSerializer
 import os
 
-stripe.api_key = 'sk_test_51Lg6uJACJ0hmrHGCnJMIMus6yTosn76emhHVTrINrAnPJpljDjBTVf02dO0ehmNcMbkgYp4F6vOQLjugUuuOSskF00Ts9ew9r1'
+stripe.api_key = settings.STRIPE_API
 
 
 class GetItemListAPIView(APIView):
