@@ -13,4 +13,4 @@ done
 
 python manage.py collectstatic --noinput
 
-gunicorn crm_ogogo.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
+gunicorn tz_proj.wsgi --bind 0.0.0.0:8000 --workers 4 --threads 4
