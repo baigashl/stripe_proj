@@ -30,7 +30,12 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '34.202.69.254', 'baigashl.online', '0.0.0.0:8000']
 
 
-# Application definition
+CORS_ALLOWED_ORIGINS = [
+    "https://baigashl.online",
+    "https://www.baigashl.online",
+    "http://34.202.69.254",
+    "http://0.0.0.0:8000",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
