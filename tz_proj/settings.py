@@ -31,12 +31,12 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '34.202.69.254', 'baigashl.online', '
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://baigashl.online",
-    "https://www.baigashl.online",
-    "http://34.202.69.254",
-    "http://0.0.0.0:8000",
-    "http://localhost",
-    "http://34.202.69.254",
+    "https://baigashl.online/",
+    "https://www.baigashl.online/",
+    "http://34.202.69.254/",
+    "http://0.0.0.0:8000/",
+    "http://localhost/",
+    "http://34.202.69.254/",
 ]
 
 INSTALLED_APPS = [
