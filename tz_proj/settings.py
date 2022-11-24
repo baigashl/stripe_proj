@@ -35,6 +35,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.baigashl.online",
     "http://34.202.69.254",
     "http://0.0.0.0:8000",
+    "http://localhost",
 ]
 
 INSTALLED_APPS = [
