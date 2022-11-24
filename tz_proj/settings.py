@@ -36,6 +36,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://34.202.69.254",
     "http://0.0.0.0:8000",
     "http://localhost",
+    "http://34.202.69.254",
 ]
 
 INSTALLED_APPS = [
